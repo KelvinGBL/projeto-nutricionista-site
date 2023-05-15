@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/contato.css">
+        <link rel="shortcut icon" href="icones_logos/favicon.ico" type="image/x-icon">
+        <title>Nutricionista Edna Gonzales</title>
+
+    </head>
+    <body>
+        <header>
+            <section class="conteiner1">
+                <section class="box1">
+                    <a href="home.html" target="_self">
+                        <img class="logo_site" src="icones_logos/logo_edna_gonzales.svg" alt="Logo da Nutricionista Edna Gonzales">
+                    </a>
+                </section>
+                <!-- Nav Desktop-->
+                <nav class="nav-site">
+                    <ul>
+                        <li>
+                            <a href="home.html" target="_self">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sobre.html" target="_self">
+                                Sobre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="servicos.html" target="_self">
+                                Serviços
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contato.html" target="_self">
+                                Contato
+                            </a>
+                        </li>
+                        <li class="icon-menu">
+                            <button onclick="openMenu()">
+                                <i class="bi bi-list"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <!-- Nav Mobile-->
+        <nav id="nav-mobile">
+            <ul>
+                <li class="icon-menu-exit">
+                    <button onclick="closeMenu()">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </li>
+                <li>
+                    <a href="home.html" target="_self">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="sobre.html" target="_self">
+                        Sobre
+                    </a>
+                </li>
+                <li>
+                    <a href="servicos.html" target="_self">
+                        Serviços
+                    </a>
+                </li>
+                <li>
+                    <a href="contato.html" target="_self">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-contato">
+            <section class="conteiner1">
+                <section class="box1">
+                    <h1 class="titulo1">Contato</h1>
+                    <p class="paragrafo">
+                        Fico muito feliz que tenha chegado até aqui. Você está há um passo de uma vida mais saudável. Entre em contato com meu atendimento especializado pelo telefone abaixo ou informe seus dados de contato que ligaremos para você para agendar sua consulta.
+                    </p>
+                    <form action="" method="post" name="form1">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" class="caixa_input" type="text" name="txtnome">
+
+                        <label for="email">E-mail:</label>
+                        <input id="email" class="caixa_input" type="email" name="txtemail">
+                        
+                        <label for="telefone">Telefone:</label>
+                        <input id="telefone" class="caixa_input" type="text" name="txttelefone">
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" class="caixa_textarea" name="txtmensagem" cols="40" rows="10"></textarea>
+
+                        <input class="form_botao" type="button" value="Enviar" onclick="verificar()">
+                    </form>
+                </section>
+                <section class="box2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3659.936968636561!2d-46.533773!3d-23.462738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5424566a833%3A0x61f72da0cf24f0fb!2sR.%20Profa.%20Anita%20Guastini%20Eiras%2C%2071%20-%20Jardim%20Zaira%2C%20Guarulhos%20-%20SP%2C%2007094-010%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1673188552711!5m2!1spt-BR!2sus" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <section class="conteiner1">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/edna.gonzales.58" target="_blank">
+                            <img class="icon-size" src="icones_logos/logo_facebook.png" alt="Facebook">
+                            <p>Facebook</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/esg.ednagonzales/" target="_blank">
+                            <img class="icon-size" src="icones_logos/logo_instagram.png" alt="Instagram">
+                            <p>Instagram</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://br.linkedin.com/in/edna-santana-gonzales-37316647" target="_blank">
+                            <img class="icon-size" src="icones_logos/logo_linkidin.png" alt="Linkedin">
+                            <p>Linkedin</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@edna.gonzales" target="_blank">
+                            <img class="icon-size" src="icones_logos/logo_tiktok.png" alt="Tik Tok">
+                            <p>Tik Tok</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="conteiner2">
+                <span>
+                    © 2022 | Todos os direitos reservados | Desenvolvido por Kelvin Gabriel.
+                </span>
+            </section>
+        </footer>
+
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
