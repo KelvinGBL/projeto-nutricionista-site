@@ -1,0 +1,15 @@
+.main-servicos .conteiner1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 900px;
+    padding: 0em 1em;
+    margin: 30px auto;
+}
+.main-servicos .conteiner1 img{
+    border-radius: 8px;
+    width: 100%;
+}
+@media screen and (max-width: 650px) {
+    .main-servicos{
+        padding: 1em 0em;
+    }
+}

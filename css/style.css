@@ -1,0 +1,296 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Bootstrap Icon */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.616);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(6, 202, 6, 0.623);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(6, 202, 6);
+}
+/* End Custom Scrollbar */
+body{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top right;
+    height: 100vh;
+    width: 100%;
+}
+header .conteiner1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 1em 1em;
+}
+header .conteiner1 a{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: none;
+}
+header .conteiner1 .logo_site{
+    display: block;
+    width: 250px;
+}
+/* Nav Desktop */
+.nav-site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 100%;
+    border-radius: 1em;
+}
+.nav-site ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    list-style: none;
+}
+.nav-site ul li a{
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(white,white);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 0% 10%;
+    border-radius: 4px;
+    width: 110px;
+    padding: 5px 10px;
+    transition: 0.4s;
+}
+.nav-site ul li a:hover{
+    background-size: 100% 10%;
+    transition: 0.4s;
+}
+.nav-site ul .icon-menu{
+    display: none;
+}
+.nav-site ul li button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.nav-site ul li button i{
+    display: block;
+    font-size: 4em;
+    color: white;
+}
+/* End Nav Desktop */
+/* Nav Mobile */
+#nav-mobile{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    z-index: 999;
+    height: 100vh;
+    width: 200px;
+    background-color: white;
+    transition: 0.4s;
+}
+#nav-mobile ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    list-style: none;
+}
+#nav-mobile ul .icon-menu-exit{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+}
+#nav-mobile ul .icon-menu-exit button{
+    color: rgb(6, 202, 6);
+    background-color: transparent;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+}
+#nav-mobile ul li a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8em;
+    color: rgb(6, 202, 6);
+    text-decoration: none;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 3em;
+}
+main .titulo1{
+    color: rgba(0, 255, 0, 0.596);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.2em;
+    margin-bottom: 0.5em;
+    text-align: left;
+    text-transform: uppercase;
+}
+main .titulo2{
+    color: rgba(0, 255, 0, 0.596);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8em;
+    line-height: 2em;
+    text-align: left;
+    text-transform: uppercase;
+}
+main .paragrafo{
+    color: white;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: left;
+}
+/* End Menu Mobile */
+footer{
+    background-color: rgba(0, 0, 0, 0.616);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    width: 100%;
+}
+footer .conteiner1{
+    padding-top: 1em;
+}
+footer .conteiner1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    list-style: none;
+}
+footer .conteiner1 ul li{
+    display: flex;
+}
+footer .conteiner1 ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    color: white;
+    text-decoration: none;
+}
+footer .conteiner1 ul li a .icon-size{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+footer .conteiner1 ul li a p{
+    display: block;
+    background-image: linear-gradient(white,white);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 0% 10%;
+    font-size: 1.2em;
+    padding-bottom: 0.2em;
+    transition: 0.4s;
+}
+footer .conteiner1 ul li a:hover > p{
+    background-size: 100% 15%;
+    transition: 0.4s;
+}
+footer .conteiner2{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+footer .conteiner2 span{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+@media screen and (max-width: 980px){
+    .nav-site ul li a{
+        display: none;
+    }
+    .nav-site{
+        justify-content: flex-end;
+    }
+    .nav-site ul .icon-menu{
+        display: block;
+    }
+    .nav-site ul li button{
+        margin-right: 1em;
+    }
+    #nav-mobile{
+        display: flex;
+    }
+}
+@media screen and (max-width: 700px) {
+    main{
+        padding: 2em 1em;
+    }
+    footer .conteiner1 ul li a p{
+        font-size: 1em;
+    }
+    footer .conteiner2 span{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 650px) {
+    header .conteiner1{
+        justify-content: none;
+        flex-direction: column;
+    }
+    header .conteiner1 .logo_site{
+        display: block;
+        width: 220px;
+    }
+}
+@media screen and (max-width: 580px) {
+    footer .conteiner1 ul li a p{
+        font-size: 0.8em;
+    }
+    footer .conteiner2 span{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width:480px) {
+    main .titulo1{
+        font-size: 2.5em;
+    }
+    main .titulo2{
+        font-size: 1.4em;
+    }
+    main .paragrafo{
+        font-size: 1em;
+    }
+    header .conteiner1 a{
+        width: 220px;
+    }
+    footer .conteiner1 ul{
+        gap: 1em;
+    }
+    footer .conteiner1 ul li a p{
+        display: none;
+        font-size: 0.8em;
+    }
+}
