@@ -55,8 +55,12 @@ function closeMenu(){
     nav_mobile.style.right = "-200px";
 }
 
+// Header
+let logo = document.querySelector(".logo_site");
+logo.src="assets/images/logo_edna_gonzales.svg";
+
 // Footer
-let icon = document.querySelectorAll(".icon-size");
+let icon = document.querySelectorAll(".icon-social");
 icon[0].src="assets/icons/logo_facebook.png";
 icon[1].src="assets/icons/logo_instagram.png";
 icon[2].src="assets/icons/logo_linkidin.png";
