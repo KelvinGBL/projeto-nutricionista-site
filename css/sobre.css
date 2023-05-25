@@ -1,3 +1,8 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .main-sobre .conteiner1{
     display: flex;
     justify-content: center;
@@ -25,20 +30,20 @@
 }
 @media screen and (max-width: 1200px) {
     .main-sobre .conteiner1{
+        justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 2em;
+        max-width: 800px;
     }
     .main-sobre .conteiner1 .box1{
-        height: 800px;
-        width: 620px;
+        height: 750px;
+        width: 100%;
+    }
+    .main-sobre .conteiner1 .box1 img{
+        object-position: top;
+        background-color: red;
     }
     .main-sobre .conteiner1 .box2{
-        max-width: 620px;
-    }
-}
-@media screen and (max-width: 700px) {
-    .main-sobre .conteiner1 .box1{
-        width: 100%;
+        max-width: 100%;
     }
 }
