@@ -1,9 +1,7 @@
 .main-sobre .conteiner1{
     display: flex;
     justify-content: center;
-    gap: 1.4em;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    gap: 2.5rem;
 }
 .main-sobre .conteiner1 .box1{
     border-radius: 8px;
@@ -16,24 +14,16 @@
     object-fit: cover;
 }
 .main-sobre .conteiner1 .box2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 600px;
     color: white;
 }
 .main-sobre ul{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
+    line-height: 2rem;
     padding-left: 40px;
 }
-.main-sobre ul li{
-    padding-bottom: 15px;
-}
 @media screen and (max-width: 1200px) {
-    .main-sobre .conteiner1 .box1{
-        width: 450px;
-    }
-}
-@media screen and (max-width: 1100px) {
     .main-sobre .conteiner1{
         align-items: center;
         flex-direction: column;
@@ -41,10 +31,10 @@
     }
     .main-sobre .conteiner1 .box1{
         height: 800px;
-        width: 650px;
+        width: 620px;
     }
     .main-sobre .conteiner1 .box2{
-        max-width: 100%;
+        max-width: 620px;
     }
 }
 @media screen and (max-width: 700px) {

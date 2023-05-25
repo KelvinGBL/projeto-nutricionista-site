@@ -12,17 +12,13 @@
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     list-style: none;
+    line-height: 1.4rem;
 }
 .main-home .conteiner1 .box2 ul li{
     display: flex;
-    font-family: 'Roboto',Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    gap: 1em;
-}
-@media screen and (max-width: 650px) {
-    .main-home .conteiner1 .box2 ul li{
-        font-size: 1em;
-    }
+    gap: 1rem;
 }
 
