@@ -36,12 +36,11 @@ main{
         max-width: 750px;
     }
     .main-sobre .conteiner1 .box1{
-        height: 750px;
+        height: 800px;
         width: 100%;
     }
     .main-sobre .conteiner1 .box1 img{
         object-position: top;
-        background-color: red;
     }
     .main-sobre .conteiner1 .box2{
         max-width: 100%;
