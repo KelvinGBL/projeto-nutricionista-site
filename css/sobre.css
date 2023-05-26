@@ -33,7 +33,7 @@ main{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        max-width: 800px;
+        max-width: 750px;
     }
     .main-sobre .conteiner1 .box1{
         height: 750px;

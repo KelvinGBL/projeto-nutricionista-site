@@ -68,7 +68,7 @@ main .conteiner1 .box2 iframe{
     main .conteiner1{
         align-items: center;
         flex-direction: column;
-        max-width: 800px;
+        max-width: 750px;
     }
     main .conteiner1 .box1{
         width: 100%;
