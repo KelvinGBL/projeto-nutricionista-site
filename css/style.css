@@ -166,13 +166,13 @@ main{
     padding: 3em;
     transition: 0.4s;
 }
-main .titulo1{
-    font-size: 3.2rem;
+main .titulo1{ /* 3.2rem */
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
     margin-bottom: 1rem;
     text-align: left;
 }
-main .titulo2{
-    font-size: 1.8rem;
+main .titulo2{ /* 1.8rem */
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
     line-height: 3.2rem;
     text-align: left;
 }

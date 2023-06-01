@@ -12,6 +12,7 @@ main{
     border-radius: 8px;
     overflow: hidden;
     width: 500px;
+    transition: 0.4s;
 }
 .main-sobre .conteiner1 .box1 img{
     height: 100%;
@@ -44,5 +45,10 @@ main{
     }
     .main-sobre .conteiner1 .box2{
         max-width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .main-sobre .conteiner1 .box1{
+        height: 600px;
     }
 }
