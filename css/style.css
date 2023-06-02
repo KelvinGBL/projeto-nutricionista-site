@@ -237,6 +237,12 @@ footer span{ /* 1.2rem */
     padding: 1rem 0rem;
     font-size: clamp(0.8rem, 2.5vw, 1.2rem);
 }
+footer span a{
+    color: white;
+}
+footer span a:hover{
+    color: #00ff0098;
+}
 @media screen and (max-width: 1000px){
     .nav-site{
         justify-content: flex-end;
