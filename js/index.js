@@ -1,46 +1,44 @@
-function limpar()
-{
-    document.form1.txtnome.style.border="2px solid rgba(155, 155, 155, 0.637)";
-    document.form1.txtemail.style.border="2px solid rgba(155, 155, 155, 0.637)";
-    document.form1.txttelefone.style.border="2px solid rgba(155, 155, 155, 0.637)";
+function limpar(nome, email, telefone){
+    nome.style.border="2px solid white";
+    email.style.border="2px solid white";
+    telefone.style.border="2px solid white";
 }
 
-function verificar()
-{
-    limpar()
-    
-    var paciente_nome, paciente_telefone, paciente_email, paciente_mensagem ;
+function verificar(){
+    let txtNome = document.getElementById("txt-nome");
+    let txtEmail = document.getElementById("txt-email");
+    let txtTelefone = document.getElementById("txt-telefone");
+    let txtMensagem = document.getElementById("txt-mensagem");
 
-    paciente_nome = document.form1.txtnome.value ;
-    if( paciente_nome.length == 0 )
-    {
+    limpar(txtNome, txtEmail, txtTelefone);
+
+    if(txtNome.value.length == 0 ){
         alert("Preencha o campo nome");
-        document.form1.txtnome.style.border="2px solid red";
-        document.form1.txtnome.focus();
+        txtNome.style.border="2px solid red";
+        txtNome.focus();
         return false;
     }
 
-    paciente_email = document.form1.txtemail.value ;
-    if( paciente_email.indexOf("@") < 0 )
-    {
+    if(txtEmail.value.indexOf("@") < 0 ){
         alert("Preencha corretamente o campo e-mail");
-        document.form1.txtemail.style.border="2px solid red";
-        document.form1.txtemail.value="";
-        document.form1.txtemail.focus();
+        txtEmail.style.border="2px solid red";
+        txtEmail.value="";
+        txtEmail.focus();
         return false;
     }
 
-    paciente_telefone = document.form1.txttelefone.value ;
-    if( isNaN(paciente_telefone) || paciente_telefone.length == 0 )
-    {
+    if( isNaN(txtTelefone.value) || txtTelefone.value.length == 0 ){
         alert("Preencha corretamente o campo telefone");
-        document.form1.txttelefone.style.border="2px solid red";
-        document.form1.txttelefone.value="";
-        document.form1.txttelefone.focus();
+        txtTelefone.style.border="2px solid red";
+        txtTelefone.value="";
+        txtTelefone.focus();
         return false;
     }
 
-    paciente_mensagem = document.form1.txtmensagem.value ;
+    txtNome = txtNome.value;
+    txtEmail = txtEmail.value;
+    txtTelefone = txtTelefone.value;
+    txtMensagem = txtMensagem.value;
 
     document.form1.submit();
 }
