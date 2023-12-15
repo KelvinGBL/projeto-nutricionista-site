@@ -27,7 +27,12 @@ main .conteiner1 .box1 form .caixa_input{
     outline: none;
     padding: 8px 10px;
     border: 2px solid transparent;
+    outline: 2px solid transparent;
     background-color: white;
+    transition: 0.2s;
+}
+main .conteiner1 .box1 form .res_input{
+    margin-top: 0.4rem;
     transition: 0.2s;
 }
 main .conteiner1 .box1 form .caixa_input:focus{
@@ -40,6 +45,7 @@ main .conteiner1 .box1 form .caixa_textarea{
     outline: none;
     padding: 10px 14px;
     border: 2px solid transparent;
+    outline: 2px solid transparent;
     resize: vertical;
     transition: 0.2s;
 }
@@ -90,5 +96,10 @@ main .conteiner1 .box2 iframe{
     main .conteiner1 .box2{
         height: 550px;
         width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    main .conteiner1{
+        max-width: 100%;
     }
 }

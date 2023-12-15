@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 /* Custom Scrollbar */
 ::-webkit-scrollbar{
@@ -42,12 +43,16 @@ label, input, textarea{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
 }
+header{
+    max-width: 1300px;
+    margin: auto;
+}
 header .conteiner1{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1em;
-    padding: 1em 1em;
+    padding: 1rem 3.4rem;
 }
 header .conteiner1 a{
     display: flex;
@@ -180,7 +185,7 @@ main .paragrafo{
     color: white;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-    line-height: 2rem;
+    line-height: 2.2rem;
     text-align: left;
 }
 /* End Menu Mobile */
@@ -272,6 +277,7 @@ footer span a:hover{
     header .conteiner1{
         justify-content: none;
         flex-direction: column;
+        padding: 1rem 1rem;
     }
     header .conteiner1 .logo_site{
         width: 220px;

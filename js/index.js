@@ -1,7 +1,18 @@
+//Eventos
+const caixaInput = document.querySelectorAll(".caixa_input");
+caixaInput.forEach((element, i)=>{
+    caixaInput[i].addEventListener('focus', ()=>{
+        caixaInput[i].style.border='2px solid #06ca06';
+    })
+    caixaInput[i].addEventListener('focusout', ()=>{
+        caixaInput[i].style.border='2px solid transparent';
+    })
+})
+
 function limpar(nome, email, telefone){
-    nome.style.border="2px solid white";
-    email.style.border="2px solid white";
-    telefone.style.border="2px solid white";
+    nome.style.border="2px solid transparent";
+    email.style.border="2px solid transparent";
+    telefone.style.border="2px solid transparent";
 }
 
 function verificar(){
@@ -10,30 +21,35 @@ function verificar(){
     let txtTelefone = document.getElementById("txt-telefone");
     let txtMensagem = document.getElementById("txt-mensagem");
 
+    let resInput = document.querySelectorAll(".res_input");
+
     limpar(txtNome, txtEmail, txtTelefone);
 
     if(txtNome.value.length == 0 ){
-        alert("Preencha o campo nome");
-        txtNome.style.border="2px solid red";
+        resInput[0].innerHTML=`Preencha corretamente o campo nome`; 
         txtNome.focus();
+        txtNome.style.border="2px solid red";
         return false;
     }
+    resInput[0].innerHTML=``; 
 
     if(txtEmail.value.indexOf("@") < 0 ){
-        alert("Preencha corretamente o campo e-mail");
-        txtEmail.style.border="2px solid red";
+        resInput[1].innerHTML=`Preencha corretamente o campo email`; 
         txtEmail.value="";
         txtEmail.focus();
+        txtEmail.style.border="2px solid red";
         return false;
     }
+    resInput[1].innerHTML=``;
 
     if( isNaN(txtTelefone.value) || txtTelefone.value.length == 0 ){
-        alert("Preencha corretamente o campo telefone");
-        txtTelefone.style.border="2px solid red";
+        resInput[2].innerHTML=`Preencha corretamente o campo telefone`; 
         txtTelefone.value="";
         txtTelefone.focus();
+        txtTelefone.style.border="2px solid red";
         return false;
     }
+    resInput[2].innerHTML=``;
 
     txtNome = txtNome.value;
     txtEmail = txtEmail.value;
